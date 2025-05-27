@@ -273,7 +273,3 @@ src/
 - Due dates for checked-out books
 - Search and filtering capabilities
 - Pagination for large book collections
-
-## License
-
-MIT License
