@@ -4,13 +4,13 @@
   "description": "Basic Node Js and Typescript Project",
   "main": "index.js",
   "scripts": {
-  "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-  "build": "tsc",
-  "start": "node dist/index.js",
-  "lint": "eslint . --ext .ts",
-  "format": "prettier --write .",
-  "test": "jest"
-},
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "src/index.js",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

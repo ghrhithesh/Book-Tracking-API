@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from "express";
 
 // Custom error class
 export class AppError extends Error {
@@ -20,9 +20,9 @@ export const errorHandler = (
   error: Error,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ): void => {
-  console.error('Error occurred:', error);
+  console.error("Error occurred:", error);
 
   // Handle our custom AppError
   if (error instanceof AppError) {
@@ -36,7 +36,7 @@ export const errorHandler = (
   // Handle unexpected errors
   res.status(500).json({
     success: false,
-    message: 'Internal server error',
+    message: "Internal server error",
   });
 };
 
@@ -44,7 +44,7 @@ export const errorHandler = (
 export const notFoundHandler = (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ): void => {
   const error = new AppError(`Route ${req.originalUrl} not found`, 404);
   next(error);

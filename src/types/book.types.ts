@@ -1,7 +1,7 @@
 // Book status enum for type safety
 export enum BookStatus {
-  AVAILABLE = 'available',
-  CHECKED_OUT = 'checked_out',
+  AVAILABLE = "available",
+  CHECKED_OUT = "checked_out",
 }
 
 // Main Book interface

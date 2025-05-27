@@ -1,10 +1,10 @@
-import { randomUUID } from 'crypto';
+import { randomUUID } from "crypto";
 import {
   Book,
   BookStatus,
   CreateBookRequest,
   UpdateBookRequest,
-} from '../types/book.types';
+} from "../types/book.types";
 
 // In-memory data store (simulates a database)
 class BookStore {
@@ -65,7 +65,7 @@ class BookStore {
     }
 
     if (book.status === BookStatus.CHECKED_OUT) {
-      throw new Error('Book is already checked out');
+      throw new Error("Book is already checked out");
     }
 
     const updatedBook: Book = {
@@ -87,7 +87,7 @@ class BookStore {
     }
 
     if (book.status === BookStatus.AVAILABLE) {
-      throw new Error('Book is already available');
+      throw new Error("Book is already available");
     }
 
     const updatedBook: Book = {
