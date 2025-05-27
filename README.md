@@ -1,6 +1,6 @@
 # Book Tracking API
 
-A simple RESTful API for tracking books in a small library. Built with TypeScript, Node.js, and Express.
+A simple RESTful API for tracking books in a small library. Built with TypeScript, Node.js, and Express. It allows clients to perform CRUD operations on books — adding new books, viewing details, updating information, checking out, and returning books. The system also features strong type safety, validation via Zod, error handling, and is fully tested with Jest and Supertest.
 
 ## Features
 
